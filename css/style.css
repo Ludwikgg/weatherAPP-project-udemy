@@ -1,3 +1,10 @@
+:root {
+    --light-purple: #837CF2;
+    --dark-purple: #4944D5;
+    --white: #E4E2FD;
+    --dark-blue: #0303D3;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,15 +17,10 @@ body {
     align-items: center;
     height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
-    background-image: radial-gradient(circle, rgba(242, 205, 193, 1) 0%, rgba(87, 142, 126, 1) 53%, rgba(122, 185, 184, 1) 100%);
+    color: var(--white);
+    background-color: var(--light-purple);
     font-size: 20px;
 }
-
-/* h1 {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px;} */
 
 input {
     font-size: 16px;
@@ -26,59 +28,57 @@ input {
     margin-top: 10px;
     background: none;
     border: none;
-    color: #fff;
-    border-bottom: 2px solid #ddd;
+    color: var(--dark-blue);
+    border-bottom: 2px solid var(--dark-blue);
 }
 
 input::placeholder {
-    color: #ddd;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark-blue);
 }
 
 button {
     padding: 10px;
     margin-left: 20px;
-    color: #fff;
+    color: white;
     font-weight: bold;
     background: none;
-    border-radius: 5px;
+    border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    background-color: var(--dark-blue);
     transition: background-color .3s, color .3s;
+    border: 0;
 }
 
 button:hover {
-    color: #333;
-    background-color: #ddd;
+    background-color: var(--dark-blue);
+    border: 0;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 800px;
-    background-color: rgba(0, 0, 0, .8);
-    border: 2px solid white;
+    background-color: var(--white);
     border-radius: 25px;
     margin: 0 2vh;
+    border: 5px solid var(--dark-purple);
+    overflow: hidden;
 }
 
 .top {
-    height: 320px;
+    height: 350px;
 }
 
 .top h1 {
     text-transform: uppercase;
     text-align: center;
     padding: 10px;
-    margin: 10px 15px;
-    color: skyblue;
+    margin: 20px 15px 40px;
+    color: var(--dark-blue);
     border-bottom: 3px solid grey;
 }
 
 .top h1 span {
-    color: goldenrod;
+    color: var(--light-purple)
 }
 
 .main-info {
@@ -86,35 +86,30 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 120px;
+}
+
+.main-input {
+    margin-top: 50px;
 }
 
 .city-name {
+    margin-top: 30px;
     font-size: 40px;
+    color: var(--dark-purple);
 }
-
 
 
 .bottom {
-    margin: 0 30px;
-    height: 300px;
-    align-self: flex-start;
-}
-
-/* .headings {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
+    height: 270px;
+    align-self: flex-start;
+    background-color: var(--dark-blue);
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 20px 20px;
 }
-
-.headings p {
-    margin: 10px 0;
-    padding: 5px 0;
-    text-transform: uppercase;
-    font-weight: bold;
-} */
-
 
 
 .weather-info {
@@ -124,29 +119,25 @@ button:hover {
 
 .weather-info h1 {
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #ddd;
 }
 
-.weather-info h1:last-child {
-    border: 0;
-}
 
 .weather-info p {
+    border-top: 2px solid var(--light-purple);
     font-size: 15px;
     padding: 10px 0;
     font-weight: normal;
 }
 
-
-
-
-
 .photo {
-    display: none;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 200px;
     object-fit: contain;
 }
+
+/* TODO:
+POPRACOWAC NAD KOLORAMI
+ZROBIC VP */
