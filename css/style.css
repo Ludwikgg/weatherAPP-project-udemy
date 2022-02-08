@@ -147,7 +147,7 @@ button:hover {
 }
 
 .attribution {
-    position: fixed;
+    position: absolute;
     bottom: 2%;
     text-align: center;
     color: var(--white)
