@@ -31,19 +31,19 @@ const checkWeather = () => {
         photo.setAttribute('src', '/img/Cloud.png')
 
         if (status.id >= 200 && status.id < 300) {
-            photo.setAttribute('src', '/img/Cloud & Lightning.png')
+            photo.setAttribute('src', './img/Cloud&Lightning.png')
         } else if (status.id >= 300 && status.id < 400) {
-            photo.setAttribute('src', '/img/Sun Behind Clouds.png')
+            photo.setAttribute('src', './img/SunBehindClouds.png')
         } else if (status.id >= 500 && status.id < 600) {
-            photo.setAttribute('src', '/img/Rain with Clouds.png')
+            photo.setAttribute('src', './img/RainwithClouds.png')
         } else if (status.id >= 600 && status.id < 700) {
-            photo.setAttribute('src', '/img/Heavy Snow Rain.png')
+            photo.setAttribute('src', './img/HeavySnowRain.png')
         } else if (status.id >= 701 && status.id < 800) {
-            photo.setAttribute('src', '/img/Sun Behind Clouds.png')
+            photo.setAttribute('src', './img/SunBehindClouds.png')
         } else if (status.id === 800) {
-            photo.setAttribute('src', '/img/Lighter Heat.png')
+            photo.setAttribute('src', './img/LighterHeat.png')
         } else if (status.id >= 801 && status.id < 900) {
-            photo.setAttribute('src', '/img/Sun Behind Clouds.png')
+            photo.setAttribute('src', './img/SunBehindClouds.png')
         }
 
     }).catch(() => {
