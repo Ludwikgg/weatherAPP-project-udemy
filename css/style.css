@@ -1,8 +1,9 @@
 :root {
-    --light-purple: #837CF2;
-    --dark-purple: #4944D5;
-    --white: #E4E2FD;
-    --dark-blue: #0303D3;
+    --light-purple: rgb(131, 124, 242);
+    --dark-purple: rgb(73, 68, 213);
+    --white: rgb(228, 226, 253);
+    --dark-blue: rgb(3, 3, 211);
+    --red: rgb(184, 64, 94);
 }
 
 * {
@@ -98,8 +99,14 @@ button:hover {
     margin-top: 30px;
     font-size: 40px;
     color: var(--dark-purple);
+    height: 50px;
 }
 
+.warning {
+    padding-top: 15px;
+    font-size: 15px;
+    color: var(--red);
+}
 
 .bottom {
     width: 100%;
@@ -139,6 +146,13 @@ button:hover {
     object-fit: contain;
 }
 
+.attribution {
+    position: fixed;
+    bottom: 2%;
+    text-align: center;
+    color: var(--white)
+}
+
 
 @media(min-width:992px) {
     .wrapper {
@@ -159,6 +173,12 @@ button:hover {
 
     .city-name {
         font-size: 55px;
+        margin-bottom: 25px;
+    }
+
+    .warning {
+        padding-top: 15px;
+        font-size: 22px;
     }
 
     input {
@@ -193,5 +213,9 @@ button:hover {
         font-size: 20px;
         padding: 20px 0;
         text-align: center;
+    }
+
+    .attribution {
+        bottom: 4%;
     }
 }
