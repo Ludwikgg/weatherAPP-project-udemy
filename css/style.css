@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
     background-color: var(--light-purple);
@@ -132,7 +132,6 @@ button:hover {
     font-weight: bold;
 }
 
-
 .weather-info p {
     border-top: 2px solid var(--light-purple);
     font-size: 15px;
@@ -147,7 +146,9 @@ button:hover {
 }
 
 .attribution {
+    margin: 3% 0;
     position: absolute;
+    z-index: -1;
     bottom: 0;
     text-align: center;
     color: var(--white)
@@ -155,6 +156,10 @@ button:hover {
 
 
 @media(min-width:992px) {
+    body {
+        height: 100vh;
+    }
+
     .wrapper {
         height: 550px;
     }
@@ -216,6 +221,7 @@ button:hover {
     }
 
     .attribution {
+        margin: 0;
         bottom: 4%;
     }
 }
